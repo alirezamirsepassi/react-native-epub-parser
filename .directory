@@ -1,5 +1,8 @@
 [Dolphin]
 PreviewsShown=false
-Timestamp=2019,6,16,13,35,51
+Timestamp=2019,6,16,13,58,19
 Version=4
 ViewMode=2
+
+[Settings]
+HiddenFilesShown=true

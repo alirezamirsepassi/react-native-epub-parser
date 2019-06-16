@@ -75,22 +75,10 @@ public class RNEpubParserModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setFullContentPath(String source) {
-        try {
-            reader.setFullContent(source);
-
-            bookToc = reader.getToc();
-            coverImage = reader.getCoverImage();
-            infoPackage = reader.getInfoPackage();
-        } catch (ReadingException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @ReactMethod
     public void setFullContentPath(String source, Boolean withProgress) {
         try {
-            reader.setFullContentWithProgress(source);
+            if (withProgress) reader.setFullContentWithProgress(source);
+            else reader.setFullContent(source);
 
             bookToc = reader.getToc();
             coverImage = reader.getCoverImage();
@@ -167,16 +155,6 @@ public class RNEpubParserModule extends ReactContextBaseJavaModule {
     public void loadProgress(Promise promise) {
         try {
             reader.loadProgress();
-            promise.resolve(true);
-        } catch (ReadingException e) {
-            promise.reject(READING_ERROR, e);
-        }
-    }
-
-    @ReactMethod
-    public void saveProgress(Promise promise) {
-        try {
-            reader.saveProgress();
             promise.resolve(true);
         } catch (ReadingException e) {
             promise.reject(READING_ERROR, e);
