@@ -2,7 +2,7 @@
 {
   "name": "react-native-epub-parser",
   "author": "Alireza Mirsepassi <alirezamirsepassi@gmail.com>",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "RN Epub parser native implementation",
   "main": "index.js",
   "scripts": {
