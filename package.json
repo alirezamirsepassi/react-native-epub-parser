@@ -1,4 +1,3 @@
-
 {
   "name": "react-native-epub-parser",
   "author": "Alireza Mirsepassi <alirezamirsepassi@gmail.com>",
@@ -9,7 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native", "epub", "epub parser", "native epub"
+    "react-native",
+    "epub",
+    "epub parser",
+    "native epub"
   ],
   "license": "MIT",
   "peerDependencies": {
