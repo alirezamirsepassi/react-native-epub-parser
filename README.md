@@ -1,9 +1,15 @@
 
 # react-native-epub-parser
 
+## PRs are welcomed!
+
 ## Getting started
 
 `$ npm install react-native-epub-parser --save`
+
+or if you prefer yarn
+
+`$ yarn add react-native-epub-parser`
 
 ### Mostly automatic installation
 
@@ -33,14 +39,6 @@
   	```
       compile project(':react-native-epub-parser')
   	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNEpubParser.sln` in `node_modules/react-native-epub-parser/windows/RNEpubParser.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Epub.Parser.RNEpubParser;` to the usings at the top of the file
-  - Add `new RNEpubParserPackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
 
 ## Usage
