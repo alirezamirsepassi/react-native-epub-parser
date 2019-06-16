@@ -1,18 +1,26 @@
 
 {
   "name": "react-native-epub-parser",
+  "author": "Alireza Mirsepassi <alirezamirsepassi@gmail.com>",
   "version": "1.0.0",
-  "description": "",
+  "description": "RN Epub parser native implementation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native", "epub", "epub parser", "native epub"
   ],
-  "author": "",
-  "license": "",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-  }
+    "react-native": ">=0.57"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alirezamirsepassi/react-native-epub-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alirezamirsepassi/react-native-epub-parser/issues"
+  },
+  "homepage": "https://github.com/alirezamirsepassi/react-native-epub-parser#readme"
 }
